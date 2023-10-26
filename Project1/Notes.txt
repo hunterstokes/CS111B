@@ -1,0 +1,11 @@
+Attempt 1: Tried copy pasting from the google doc to get the code to run on Visual Studio Code. It would not run, Approx 20 minutes.
+
+Attempt 2: Had to check each section as I was writing, lots of mistakes. 12 minutes.
+
+Attempt 3: Set up the program without mistake but had to look to get user input and get random. Got the if statement without looking. 8 minutes.
+
+Attempt 4: Set up the program and got the Scanner part without checking and took user input. Had to look at the Random part. 7 minutes
+
+Attempt 5: got everything but usersNumber = scnr.nextInt() without looking, but i forgot a few semicolons 7 minutes
+
+Attempt 6: Got it all written from memory. 5 minutes.
