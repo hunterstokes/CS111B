@@ -22,6 +22,14 @@ public class GridWriter {
     columns = c;
   }
 
+  public int size() {
+    return size;
+  }
+
+  public GridItem get(int index) {
+    return items[index];
+  }
+
   /****
    * The GridWriter is a collection style class. It stores GridItems, and
    * prints out a display grid. The add method provides a way to put
