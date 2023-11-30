@@ -1,0 +1,18 @@
+List all the statements where the datatype of a reference might not be an exact match with the datatype of the object that it refers to. This is a kind of polymorphism.
+    The GridItem class, the containsPoint method is declared as protected. This meeans that any subclass of GridItem such as Circle, can overide and provide its own implementation of the method. This is an example of polymorphism. When calling containsPoint method on a Circle object, the method in Circle is called, not the one in GridItem.
+
+In the containsPoint method of Circle, why are x and y in scope, even though they are not defined as instance variables in Circle.java?
+    x and y are in scope because they are defined as protected in GridItem.java. This means that they are accessible to any subclass of GridItem, such as Circle.
+
+Notice that x and y are declared as ‘protected’ in GridItem. Change this to ‘private’ and recompile. How does the compiler respond?
+    The compiler responds with an error message saying that x and y are not visible in Circle.java. This is because they are declared as private in GridItem.java, which means that they are only accessible within the GridItem class.
+
+How could Abstract Methods have been used to make the code cleaner?
+    Abstract methods could have been used to make the code cleaner by removing the need for the containsPoint method in GridItem.java. Instead, the containsPoint method could have been declared as abstract in GridItem.java, and then implemented in Circle.java. This would have removed the need for the containsPoint method in GridItem.java, and would have made the code cleaner.
+
+How might an Interface have been used to structure the classes?
+    
+    
+
+    
+
