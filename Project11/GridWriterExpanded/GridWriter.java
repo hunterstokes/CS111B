@@ -2,18 +2,11 @@ package Project11.GridWriterExpanded;
 
 public class GridWriter {
 
-  private GridItem items[];
-  private int size;
-  private int rows;
-  private int columns;
-  private static final int INITIAL_CAPACITY = 4;
-
-  /****
-   * Create a new GridWriter. It is initially empty. It has the capacity
-   * to store four GridItems before it will need to double its array size.
-   * The row and column arguments are used in the display method, to
-   * determine the size of the grid that is printed to standard output.
-   ***/
+  protected GridItem items[];
+  protected int size;
+  protected int rows;
+  protected int columns;
+  protected static final int INITIAL_CAPACITY = 4;
 
   public GridWriter(int r, int c) {
     items = new GridItem[INITIAL_CAPACITY];
@@ -27,7 +20,18 @@ public class GridWriter {
   }
 
   public GridItem get(int index) {
-    return items[index];
+    try {
+      if (index < 0 || index >= size) {
+        throw new IndexOutOfBoundsException("Index out of bounds. Please enter a valid input.");
+      // } else if (get(index) == null) {
+      //   throw new IndexOutOfBoundsException("There is no item at this index. Please enter a valid input.");
+      } else {
+        return items[index];
+      }
+    } catch (IndexOutOfBoundsException e) {
+      System.out.println(e.getMessage());
+      return null;
+    }
   }
 
   /****
